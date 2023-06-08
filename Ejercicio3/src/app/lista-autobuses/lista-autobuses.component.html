@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let bus of autobuses">
+    <p>{{ bus.matricula }}</p>
+    <ul>
+      <li *ngFor="let visita of bus.visitas">
+        {{ visita.lugar.nombre }}
+      </li>
+    </ul>
+  </li>
+</ul>
